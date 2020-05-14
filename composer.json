@@ -1,0 +1,30 @@
+{
+    "name": "avido/laravel-tesla-api",
+    "version": "1.0.0",
+    "description": "Laravel Tesla Api Client Wrapper for https://packagist.org/packages/avido/tesla-api-client",
+    "keywords": ["laravel", "php", "tesla", "api"],
+    "authors": [
+        {
+            "name": "Sebastiaan",
+            "email": "sebastiaan@avido.nl"
+        }
+    ],
+    "require": {
+        "avido/tesla-api-client": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Avido\\LaravelTeslaApi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Avido\\LaravelTeslaApi\\TeslaApiServiceProvider"
+            ],
+            "aliases": {
+                "TeslaApi": "Avido\\LaravelTeslaApi\\Facades\\TeslaApi"
+            }
+        }
+    }
+}
